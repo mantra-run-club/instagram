@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Instagram</title>
+    <script type="text/javascript">
+        function openInstagram() {
+            var appUrl = "instagram://user?username=mantrarunclub";
+            var webUrl = "https://www.instagram.com/mantrarunclub/";
+
+            var start = new Date().getTime();
+            setTimeout(function() {
+                if (new Date().getTime() - start < 2000) {
+                    window.location = webUrl;
+                }
+            }, 1000);
+
+            window.location = appUrl;
+        }
+    </script>
+</head>
+<body>
+    <a href="#" onclick="openInstagram(); return false;">Open Instagram Profile</a>
+</body>
+</html>
